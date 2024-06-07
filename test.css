@@ -1,0 +1,42 @@
+p{
+    text-align: center;
+}
+#hii{
+    text-align: center;
+}
+.hlw{
+    text-align: center;
+}
+*{ /*universal selector*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+ p,#hii,.hlw{ /*group selector */
+    color: brown;
+}
+blockquote b{ /*descendent selector */
+    color: blue;
+}
+
+blockquote > i{ /*child selector*/
+    color: cyan;
+}
+
+q + blockquote{/*adjacent sibling selector*/
+    font-size: larger;
+}
+
+h4 ~ h5 { /*general sibling selector*/
+    color: brown;
+}
+
+div ~ p:hover{ /*pseudo class selector*/
+    color: yellow;
+}
+
+div ~ p::first-letter{ /*pseudo element selector*/
+    color: blueviolet;
+}
+
+a[target]{ /*attribute selector*/
+    color: green;
+}
